@@ -13,6 +13,7 @@ int CountDigits(int number)
     number = Math.Abs(number);
     int count = 0;
     int i = 10;
+    if(number == 0) return 1;
     while (number > 0)
     {
         number = number - number%i;
